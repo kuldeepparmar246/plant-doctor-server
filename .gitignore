@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+Train_potato_disease_detector.ipynb
+.env
