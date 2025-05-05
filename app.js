@@ -9,6 +9,7 @@ import {
 import userRouter from './controllers/userRouter.js'
 import cors from 'cors'
 import loginRouter from './controllers/loginRouter.js'
+import apiRouter from './controllers/apiRouter.js'
 
 mongoose.set('strictQuery',false)
 mongoose
@@ -30,6 +31,7 @@ app.use(requestLogger)
 
 app.use('/api/users',userRouter)
 app.use('/api/login',loginRouter)
+app.use('/api/ask',apiRouter)
 
 app.use(unknownEndpoint)
 app.use(errorHandler)

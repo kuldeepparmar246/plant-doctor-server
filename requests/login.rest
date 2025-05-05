@@ -1,4 +1,4 @@
-post http://localhost:3001/api/login
+post https://plant-doctor-server.onrender.com/api/login
 Content-Type: application/json
 
 {
